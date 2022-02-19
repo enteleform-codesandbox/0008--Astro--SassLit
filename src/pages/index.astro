@@ -1,0 +1,40 @@
+---
+import "Styles/Global.sass"
+import "Public/Styles/Counter.css"
+
+//import "Components/Counters/LitCounter.js"
+import {PreactCounter} from "Components/Counters/PreactCounter.tsx"
+import {ReactCounter } from "Components/Counters/ReactCounter.jsx"
+import {SolidCounter } from "Components/Counters/SolidCounter.tsx"
+import SvelteCounter   from "Components/Counters/SvelteCounter.svelte"
+import VueCounter      from "Components/Counters/VueCounter.vue"
+---
+
+
+<main>
+
+	<!--<lit-counter client:visible>
+		<h1>Hello Lit!</h1>
+	</lit-counter>-->
+
+	<PreactCounter client:visible>
+		<h1>Hello Preact!</h1>
+	</PreactCounter>
+
+	<ReactCounter client:visible>
+		<h1>Hello React!</h1>
+	</ReactCounter>
+
+	<SolidCounter client:visible>
+		<h1>Hello Solid!</h1>
+	</SolidCounter>
+
+	<SvelteCounter client:visible>
+		<h1>Hello Svelte!</h1>
+	</SvelteCounter>
+
+	<VueCounter client:visible>
+		<h1>Hello Vue!</h1>
+	</VueCounter>
+
+</main>
